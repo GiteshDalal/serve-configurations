@@ -1,0 +1,3 @@
+---
+security:
+  security-realm: 'SERVE - Microservice based E-Commerce Platform - Default Realm'
