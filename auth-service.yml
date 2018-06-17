@@ -1,3 +1,13 @@
 ---
 security:
   security-realm: 'SERVE - Microservice based E-Commerce Platform - Default Realm'
+  oauth2:
+    password_encoder: bcrypt
+    validity:
+      access_token: 10000
+      refresh_token: 30000
+    resource_id: oauth2_id
+      keystore:
+        key: serve_key
+        file: keystore.jks
+        password: password
