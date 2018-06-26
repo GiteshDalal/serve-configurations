@@ -7,7 +7,7 @@ security:
       access_token: 10000
       refresh_token: 30000
     resource_id: oauth2_id
-      keystore:
-        key: serve_key
-        file: keystore.jks
-        password: password
+    keystore:
+      key: serve_key
+      file: keystore.jks
+      password: password
