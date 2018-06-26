@@ -4,7 +4,7 @@ counter:
 
 security:
   oauth2:
-    resource.id: ProductService
-    client.id: client_user
-    client.secret: client_password
-    service.id: auth-service
+    resourceId: ProductService
+    clientId: client_user
+    clientSecret: client_password
+    serviceId: auth-service
