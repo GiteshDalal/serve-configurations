@@ -1,10 +1,10 @@
 ---
 counter:
-  prefixMessage: 'Testing Counter : '
+  prefix-message: 'Testing Counter : '
 
 security:
   oauth2:
-    resourceId: ProductService
-    clientId: client_user
-    clientSecret: client_password
-    serviceId: auth-service
+    resource-id: ProductService
+    client-id: client_user
+    client-secret: client_password
+    service-id: auth-service

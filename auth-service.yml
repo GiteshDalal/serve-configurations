@@ -1,13 +1,13 @@
 ---
 security:
-  securityRealm: 'SERVE - Microservice based E-Commerce Platform - Default Security Realm'
+  security-realm: 'SERVE - Microservice based E-Commerce Platform - Default Security Realm'
   oauth2:
-    resourceIds:
+    resource-ids:
       - OAuth2Service
       - ProductService
     validity:
-      accessToken: 10000
-      refreshToken: 30000
+      access-token: 10000
+      refresh-token: 30000
     keystore:
       key: serve_key
       file: keystore.jks
