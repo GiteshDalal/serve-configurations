@@ -1,11 +1,1 @@
-security:
-  oauth2:
-    resource-ids:
-    - ProductService
-    validity:
-      access-token: 10000
-      refresh-token: 30000
-    keystore:
-      key: serve_key
-      file: keystore.jks
-      password: password
+---
