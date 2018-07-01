@@ -1,7 +1,5 @@
----
 counter:
   prefix-message: 'Testing Counter : '
-
 security:
   oauth2:
     resource-id: ProductService

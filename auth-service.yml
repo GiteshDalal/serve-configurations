@@ -1,9 +1,7 @@
----
 security:
   oauth2:
     resource-ids:
-      - OAuth2Service
-      - ProductService
+    - ProductService
     validity:
       access-token: 10000
       refresh-token: 30000
