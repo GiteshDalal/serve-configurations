@@ -1,6 +1,5 @@
 ---
 security:
-  security-realm: 'SERVE - Microservice based E-Commerce Platform - Default Security Realm'
   oauth2:
     resource-ids:
       - OAuth2Service
