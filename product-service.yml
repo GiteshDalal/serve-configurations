@@ -14,7 +14,7 @@ serve:
     resource-id: ProductService
     client-id: client_user
     client-secret: client_password
-    service-id: auth-service
+    auth-server-service-id: auth-service
 
 counter:
   prefix-message: 'Testing Counter : '    
