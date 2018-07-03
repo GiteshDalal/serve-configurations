@@ -12,9 +12,9 @@ spring:
 serve:
   oauth2:
     resource-ids: ProductService
-    validity:
-      access-token: 10000
-      refresh-token: 30000
+    validity: # Only valid for testing accounts. Set in tokenServices() to use globally
+      access-token: 43200 # 60 * 60 * 12 = 12 hours
+      refresh-token: 691200 # 60 * 60 * 24 * 8 = 8 days
     keystore:
       key: serve_key
       file: keystore.jks
@@ -30,7 +30,8 @@ spring:
 
 logging:
   level:
-    ROOT: debug
+    com.giteshdalal: debug
+    org.springframework.security: debug
 
 eureka:
   client:
