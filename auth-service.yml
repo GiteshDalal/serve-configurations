@@ -16,17 +16,13 @@ serve:
       access-token: 43200 # 60 * 60 * 12 = 12 hours
       refresh-token: 691200 # 60 * 60 * 24 * 8 = 8 days
     keystore:
-      key: serve_key
       file: keystore.jks
-      password: password
 
 ---
 spring:
   profiles: local
   datasource:
     url: jdbc:mysql://localhost:3306/serve?createDatabaseIfNotExist=true&useSSL=false
-    username: root
-    password: infrrd@123
 
 logging:
   level:
@@ -43,8 +39,6 @@ spring:
   profiles: docker
   datasource:
     url: jdbc:mysql://db:3306/serve?useSSL=false
-    username: root
-    password: root_password
 
 logging:
   level:

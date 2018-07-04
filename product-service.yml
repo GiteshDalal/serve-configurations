@@ -12,19 +12,15 @@ spring:
 serve:
   oauth2:
     resource-id: ProductService
-    client-id: client_user
-    client-secret: client_password
     auth-server-service-id: auth-service
 
 counter:
-  prefix-message: 'Testing Counter : '    
+  prefix-message: 'Testing Counter : '
 ---
 spring:
   profiles: local
   datasource:
     url: jdbc:mysql://localhost:3306/serve?createDatabaseIfNotExist=true&useSSL=false
-    username: root
-    password: infrrd@123
  
 logging:
   level:
@@ -41,8 +37,6 @@ spring:
   profiles: docker
   datasource:
     url: jdbc:mysql://db:3306/serve?useSSL=false
-    username: root
-    password: root_password
 
 logging:
   level:
