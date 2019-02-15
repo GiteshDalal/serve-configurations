@@ -13,9 +13,6 @@ serve:
   oauth2:
     resource-id: ProductService
     auth-server-service-id: auth-service
-
-counter:
-  prefix-message: 'Testing Counter : '
 ---
 spring:
   profiles: local
