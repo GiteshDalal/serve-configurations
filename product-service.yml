@@ -16,8 +16,6 @@ serve:
 ---
 spring:
   profiles: local
-  datasource:
-    url: jdbc:mysql://localhost:3306/serve?createDatabaseIfNotExist=true&useSSL=false
  
 logging:
   level:
@@ -32,8 +30,6 @@ eureka:
 ---
 spring:
   profiles: docker
-  datasource:
-    url: jdbc:mysql://db:3306/serve?useSSL=false
 
 logging:
   level:
