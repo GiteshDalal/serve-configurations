@@ -11,7 +11,7 @@ spring:
 # SERVE | PRODUCT-SERVICE CONFIGURATION
 serve:
   oauth2:
-    resource-id: ProductService
+    resource-id: UserService
     auth-server-service-id: auth-service
 ---
 spring:
@@ -37,7 +37,7 @@ logging:
 
 eureka:
   instance:
-    hostname: product
+    hostname: user
   client:
     service-url:
       defaultZone: http://discovery:8761/eureka/

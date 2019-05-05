@@ -1,17 +1,8 @@
 ---
-spring:
-  profiles: dev
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: create
-    properties:
-      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
-
-# SERVE | PRODUCT-SERVICE CONFIGURATION
+# SERVE | EMAIL-SERVICE CONFIGURATION
 serve:
   oauth2:
-    resource-id: ProductService
+    resource-id: EmailService
     auth-server-service-id: auth-service
 ---
 spring:
@@ -37,7 +28,7 @@ logging:
 
 eureka:
   instance:
-    hostname: product
+    hostname: email
   client:
     service-url:
       defaultZone: http://discovery:8761/eureka/
